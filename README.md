@@ -32,11 +32,13 @@ apiKey: "YOUR API GOES HERE",
 We create a function displayWeather --for the same purpose as named.
 Paramater is-- "data" <br>
 <li>GET as const--- name, describtion, icon,temp,humidity,speed etc~ as **variables**</li><br>
+<li>documnet.QuerySelector-- to Display the information on the page-- replace necessary data in html. </li><br>
+
 
 ```js
 displayWeather: function (data) {
       const { name } = data;
-      const { icon, description } = data.weather[0];
+      const { icon, description } = data.weather[0]; //since we are dealing with an array--check JSON
       const { temp, humidity } = data.main;
       const { speed } = data.wind;
       document.querySelector(".city").innerText = "Weather in " + name;
