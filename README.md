@@ -55,3 +55,24 @@ displayWeather: function (data) {
         "url('https://source.unsplash.com/1600x900/?" + name + "')";
     },
 ```
+
+<li>querySelector -- on search-bar. Get information inserted and pass it to the function~ what function? The fetchWeather function, you dumbass~ </li>
+
+```js
+search: function () {
+      this.fetchWeather(document.querySelector(".search-bar").value);
+    },
+  };
+  
+  document.querySelector(".search button").addEventListener("click", function () {
+    weather.search();
+  });
+  
+  document
+    .querySelector(".search-bar")
+    .addEventListener("keyup", function (event) {
+      if (event.key == "Enter") {
+        weather.search();
+      }
+    });
+```
