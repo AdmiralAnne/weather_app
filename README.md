@@ -69,10 +69,17 @@ search: function () {
   });
   
   document
-    .querySelector(".search-bar")
+    .querySelector(".search-bar") //when you press enter, it searches the City
     .addEventListener("keyup", function (event) {
       if (event.key == "Enter") {
         weather.search();
       }
     });
 ```
+
+<li>to display a city when you load the site-- just a small detail</li><br>
+
+```js
+weather.fetchWeather("Dimapur");
+```
+
