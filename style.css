@@ -8,7 +8,6 @@ body {
     font-family: 'Open Sans', sans-serif;
     background: #222;
     background-image: url(./Icons/pine-watt-2Hzmz15wGik-unsplash.jpg);
-    background-size: 100%;
     font-size: 120%;
   }
   
@@ -72,17 +71,3 @@ body {
     margin-left: 8px;
   }
   
-  .weather.loading {
-    visibility: hidden;
-    max-height: 20px;
-    position: relative;
-  }
-  
-  .weather.loading:after {
-    visibility: visible;
-    content: "Loading...";
-    color: white;
-    position: absolute;
-    top: 0;
-    left: 20px;
-  }
