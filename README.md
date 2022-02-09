@@ -77,7 +77,7 @@ search: function () {
     });
 ```
 
-<li>to display a city when you load the site-- just a small detail</li><br>
+<li>to display a city when you load the site-- just a minor detail</li><br>
 
 ```js
 weather.fetchWeather("Dimapur");
