@@ -51,4 +51,4 @@ let weather = {
       }
     });
   
-  weather.fetchWeather("Dimapur");
+  weather.fetchWeather("Delhi");
